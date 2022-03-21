@@ -53,7 +53,7 @@ ABOUTTEXT = (
 
 
 @Medusa.on_message(
-    filters.command(['start', 'help'], ['/', '!'])
+    filters.command(['start', 'help'], ['/', 's', '!'])
     & (filters.private | filters.group)
     & ~ filters.edited
 )
