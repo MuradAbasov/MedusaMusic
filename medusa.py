@@ -17,7 +17,7 @@ Medusa = Client(
 
 
 PMTEXT = (
-    "<a href='https://en.wikipedia.org/wiki/Medusa'>**Medusa**</a> is a Greek mythology.\n"
+    "<a href='https://en.wikipedia.org/wiki/Medusa'>**Salam**</a> is a Greek mythology.\n"
     "__Generally described as winged human females with living venomous snakes in place of hair."
     " Those who gazed into her eyes would turn to stone.\nThe word '**Mousiki**' is the Greek word for"
     " '**Music**'.__\n\n**However, I can download youtube songs for u immediately :)**\n__Check **help** to see the usage__"
@@ -53,7 +53,7 @@ ABOUTTEXT = (
 
 
 @Medusa.on_message(
-    filters.command(['start', 'help'], ['/', 's', '!'])
+    filters.command(['start', 'help'], ['/', '.', '!'])
     & (filters.private | filters.group)
     & ~ filters.edited
 )
